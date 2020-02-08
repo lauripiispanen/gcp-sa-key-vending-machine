@@ -1,0 +1,18 @@
+info:
+  title: GCP Service Account key vending machine
+  author: Lauri Piispanen
+  description: Creates a vending machine that creates service account keys that will then be automatically revoked after a configurable time period
+  version: 0.1
+
+imports:
+- path: token-vendor.jinja
+
+properties:
+  location:
+    type: string
+    default: "eu-west-1"
+    description: Location in which to place the vending machine cloud functions
+
+  project:
+    type: string
+    description: Project id
