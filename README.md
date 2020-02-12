@@ -5,4 +5,4 @@ This project is a WIP to build a vending machine that creates a service account 
 
 **Deploy:**
 
-```gcloud deployment-manager deployments create token-vendor --template=token-vendor.jinja```
+```gcloud deployment-manager deployments create token-vendor --template=token-vendor.py```

@@ -5,14 +5,20 @@ info:
   version: 0.1
 
 imports:
-- path: token-vendor.jinja
+- path: token-vendor.py
+- path: helpers/files_to_zip.py
 
 properties:
   location:
     type: string
-    default: "eu-west-1"
+    default: "europe-west1"
     description: Location in which to place the vending machine cloud functions
 
   project:
     type: string
     description: Project id
+
+  codeLocation:
+    type: string
+    default: "functions/"
+    description: Directory under which the function code is located
